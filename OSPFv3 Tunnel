@@ -1,7 +1,7 @@
 interface TunnelFF
  description multi-point Tunnel
  bandwidth 6144
- ip address 10.200.XXX.1 255.255.255.192
+ ip address XXX.XXX.XXX.XXX 255.255.255.192
  no ip redirects
  no ip proxy-arp
  ip mtu 1420
@@ -10,28 +10,28 @@ interface TunnelFF
  ip pim sparse-mode
  ip nhrp authentication XXXFF
  ip nhrp map multicast dynamic
- ip nhrp map multicast 10.210.XXX.XXX
- ip nhrp map 10.200.XXX.XXX 10.210.XXX.XXX
- ip nhrp map multicast 10.210.XXX.XXX
- ip nhrp map 10.200.XXX.XXX 10.210.XXX.XXX
- ip nhrp map multicast 10.210.XXX.XXX
- ip nhrp map 10.200.XXX.XXX 10.210.XXX.XXX
+ ip nhrp map multicast XXX.XXX.XXX.XXX
+ ip nhrp map XXX.XXX.XXX.XXX XXX.XXX.XXX.XXX
+ ip nhrp map multicast XXX.XXX.XXX.XXX
+ ip nhrp map XXX.XXX.XXX.XXX XXX.XXX.XXX.XXX
+ ip nhrp map multicast XXX.XXX.XXX.XXX
+ ip nhrp map XXX.XXX.XXX.XXX XXX.XXX.XXX.XXX
  ip nhrp network-id FF
  ip nhrp holdtime 600
- ip nhrp nhs 10.200.XXX.XXX
- ip nhrp nhs 10.200.XXX.XXX
- ip nhrp nhs 10.200.XXX.XXX
+ ip nhrp nhs XXX.XXX.XXX.XXX
+ ip nhrp nhs XXX.XXX.XXX.XXX
+ ip nhrp nhs XXX.XXX.XXX.XXX
  ip tcp adjust-mss 1332
  ipv6 address FC00::AC8:YYYY/122
  ipv6 mtu 1420
  ipv6 nhrp authentication XXXFF
  ipv6 nhrp map multicast dynamic
- ipv6 nhrp map multicast 10.210.XXX.XX
- ipv6 nhrp map FC00::AC8:YYYY/128 10.210.XXX.XX
- ipv6 nhrp map multicast 10.210.XXX.XX
- ipv6 nhrp map FC00::AC8:YYYY/128 10.210.XXX.XX
- ipv6 nhrp map multicast 10.210.XXX.XX
- ipv6 nhrp map FC00::AC8:YYYY/128 10.210.XXX.XX
+ ipv6 nhrp map multicast XXX.XXX.XXX.XX
+ ipv6 nhrp map FC00::AC8:YYYY/128 XXX.XXX.XXX.XX
+ ipv6 nhrp map multicast XXX.XXX.XXX.XX
+ ipv6 nhrp map FC00::AC8:YYYY/128 XXX.XXX.XXX.XX
+ ipv6 nhrp map multicast XXX.XXX.XXX.XX
+ ipv6 nhrp map FC00::AC8:YYYY/128 XXX.XXX.XXX.XX
  ipv6 nhrp network-id FF
  ipv6 nhrp holdtime 600
  ipv6 nhrp nhs FC00::AC8:YYYY
